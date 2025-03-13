@@ -64,14 +64,14 @@ elif issue.lower() == "tire rotation":
         print("Sorry, we only accept cash, credit, or debit.")
     
 
-elif issue.lower() == "brake pad replacment and front end alignment":
+elif issue.lower() == "brake pad replacment":
     
-    pads = input(f"Alright, {name}, would you like the standard or the package that does both of them for cheaper?: ")
+    pads = input(f"Alright, {name}, would you like the standard which only does the brake pads or the package that does both brake pad replacemnet and front end alignment?: ")
     
     if pads.lower() == "standard":
-        print(f"Alright, {name}, that will be $150.00 for the brake pad replacment.")
+        print(f"Alright, {name}, that will be $100.00 for the brake pad replacment.")
         time.sleep(2)
-        print("That's 216.66 Canadian.")
+        print("That's 144.43 Canadian.")
         time.sleep(2)
     
     elif pads.lower() == "package":
