@@ -64,4 +64,40 @@ elif issue.lower() == "tire rotation":
         print("Sorry, we only accept cash, credit, or debit.")
     
 
-
+elif issue.lower() == "brake pad replacment and front end alignment":
+    
+    pads = input(f"Alright, {name}, would you like the standard or the package that does both of them for cheaper?: ")
+    
+    if pads.lower() == "standard":
+        print(f"Alright, {name}, that will be $150.00 for the brake pad replacment.")
+        time.sleep(2)
+        print("That's 216.66 Canadian.")
+        time.sleep(2)
+    
+    elif pads.lower() == "package":
+        print(f"Alright, {name}, that will be $120.00 for the package.")
+        time.sleep(2)
+        print("That's 173.33 Canadian.")
+        time.sleep(2)
+    
+    pay = input("Thank you for choosing Woonsocket Career Center auto garage, how would you like to pay?:")
+    
+    if pay == ("Cash"):
+        print(f"Thank you for your payment, {name}, have a great day!")
+    
+    elif pay == ("Credit"):
+        print("Alright just swipe your card here.")
+        time.sleep(2)
+        print("Prossesing...")
+        time.sleep(2)
+        print(f"Thank you for your payment, {name}, have a great day!")
+   
+    elif pay == ("Debit"):
+        print("Alright just swipe your card here.")
+        time.sleep(2)
+        print("Prossesing...")
+        time.sleep(2)
+        print(f"Thank you for your payment, {name}, have a great day!")
+   
+    else:
+        print("Sorry, we only accept cash, credit, or debit.")
